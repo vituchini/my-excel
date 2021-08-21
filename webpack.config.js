@@ -13,6 +13,7 @@ console.log('isDev', isDev)
 const filename = ext => isProd ? `bundle.[hash].${ext}` : `bundle.${ext}`
 
 module.exports = {
+    target: 'web',
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry:
